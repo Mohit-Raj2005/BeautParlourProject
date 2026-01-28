@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Beauty Parlour in Raniganj | Elegance Redefined</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Poppins', sans-serif; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+
+        .hero-gradient { background: linear-gradient(135deg, #fff5f5 0%, #fef2f2 100%); }
+
+        /* Swiper Pagination Styling */
+        .swiper-pagination-bullet-active { background: #f43f5e !important; }
+        .swiper-pagination-bullet { width: 12px; height: 12px; }
+
+        /* Scroll Margins for Sticky Nav */
+        #premium-services, #waxing-category { scroll-margin-top: 100px; }
+    </style>
+</head>
+
+<body class="hero-gradient min-h-screen">
+
+    <nav class="bg-white sticky top-0 z-50 shadow-sm border-b border-gray-100">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-rose-500 rounded-full flex items-center justify-center text-white font-bold text-xs uppercase tracking-tighter">F&G</div>
+                <span class="text-xl font-bold text-gray-800 tracking-tight tracking-widest uppercase">Fair & Glow <span class="text-rose-500">Raniganj</span></span>
+            </div>
+
+            <ul class="hidden lg:flex space-x-8 text-sm font-medium text-gray-700">
+                <li><a href="index.html" class="hover:text-rose-500 transition">Home</a></li>
+                <li><a href="about.html" class="hover:text-rose-500 transition">About</a></li>
+                
+                <li class="relative group">
+                    <button class="flex items-center hover:text-rose-500 transition">
+                        Services
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="absolute hidden group-hover:block bg-white shadow-xl border border-gray-100 mt-2 w-56 rounded-xl overflow-hidden z-50">
+                        <a href="#premium-services" class="block px-4 py-3 hover:bg-rose-50 text-gray-600 border-b border-gray-50">Facials & Skin</a>
+                        <a href="#premium-services" class="block px-4 py-3 hover:bg-rose-50 text-gray-600 border-b border-gray-50">Hair Styling</a>
+                        <a href="#premium-services" class="block px-4 py-3 hover:bg-rose-50 text-gray-600 border-b border-gray-50">Bridal Makeup</a>
+                        <a href="#waxing-category" class="block px-4 py-3 hover:bg-rose-50 text-gray-600 border-b border-gray-50">Waxing & Threading</a>
+                        <a href="#" class="block px-4 py-3 hover:bg-rose-50 text-gray-600">Mehndi Design</a>
+                    </div>
+                </li>
+
+                <li><a href="gallery.html" class="hover:text-rose-500 transition">Gallery</a></li>
+                <li><a href="#contact" class="hover:text-rose-500 transition">Contact</a></li>
+            </ul>
+
+            <div class="flex items-center space-x-4">
+                <button onclick="quickChat()" class="hidden md:flex bg-green-500 text-white px-5 py-2 rounded-lg text-sm font-semibold hover:bg-green-600 transition shadow-md items-center">
+                    <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.588-5.946 0-6.556 5.332-11.888 11.888-11.888 3.176 0 6.161 1.237 8.404 3.48s3.48 5.228 3.48 8.404c0 6.557-5.331 11.888-11.887 11.888-2.01 0-3.988-.511-5.742-1.48L0 24zm6.733-4.148l.303.18c1.393.83 3.111 1.269 4.863 1.269 5.059 0 9.176-4.117 9.176-9.177 0-2.452-.955-4.756-2.69-6.49s-4.038-2.69-6.49-2.69c-5.06 0-9.177 4.117-9.177 9.177 0 1.916.593 3.788 1.714 5.356l.198.283-.993 3.627 3.706-.974z" /></svg>
+                    Chat Now
+                </button>
+                <button class="lg:hidden text-gray-700">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-10 flex flex-col md:flex-row items-center justify-between py-16">
+        <div class="md:w-1/2 space-y-6">
+            <span class="text-rose-500 font-semibold tracking-widest uppercase text-sm">Welcome to Beauty Bliss</span>
+            <h1 class="text-5xl md:text-7xl text-gray-800 leading-tight">Where Tradition <br> Meets <span class="text-rose-500 italic">Trends.</span></h1>
+            <p class="text-gray-600 text-lg max-w-md">Experience expert beauty care with a personal touch. From bridal makeovers to relaxing facials, we make you feel like royalty.</p>
+            <div class="flex space-x-4 pt-4">
+                <a href="#premium-services" class="bg-gray-800 text-white px-8 py-4 rounded-lg hover:bg-black transition inline-flex items-center">
+                    Explore Services
+                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </a>
+                <button onclick="quickChat()" class="border-2 border-rose-200 text-rose-600 px-8 py-4 rounded-lg hover:bg-rose-50 transition">Call Aunty</button>
+            </div>
+        </div>
+
+        <div class="md:w-1/2 mt-12 md:mt-0 relative">
+            <div class="absolute -top-10 -left-10 w-64 h-64 bg-rose-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+            <div class="swiper myHeroSwiper relative rounded-2xl overflow-hidden shadow-2xl border-8 border-white">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide relative">
+                        <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=800&q=80" class="w-full h-[500px] object-cover" alt="Parlour">
+                        <div class="absolute bottom-6 left-6 bg-white/90 backdrop-blur-md p-4 rounded-xl shadow-lg border border-white/50">
+                            <p class="text-xs text-rose-500 uppercase font-bold tracking-widest">Our Space</p>
+                            <p class="text-gray-800 font-semibold text-lg">Modern & Hygienic Environment</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide relative">
+                        <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=800&q=80" class="w-full h-[500px] object-cover" alt="Facial">
+                        <div class="absolute bottom-6 left-6 bg-white/90 backdrop-blur-md p-4 rounded-xl shadow-lg border border-white/50">
+                            <p class="text-xs text-rose-500 uppercase font-bold tracking-widest">Special Offer</p>
+                            <p class="text-gray-800 font-semibold text-lg">Gold Facial - 20% Off!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </main>
+
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-10 text-center">
+            <h2 class="text-4xl font-serif text-gray-800 mb-4">Our Signature Services</h2>
+            <div class="w-20 h-1 bg-rose-500 mx-auto mb-12"></div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 border border-rose-100 rounded-2xl hover:shadow-xl transition group text-left">
+                    <h3 class="text-xl font-bold mb-4 text-rose-600">Skin & Glow</h3>
+                    <ul class="text-gray-600 space-y-2 text-sm">
+                        <li class="flex justify-between border-b border-gray-50 pb-2"><span>Fruit Facial</span> <span>₹500+</span></li>
+                        <li class="flex justify-between border-b border-gray-50 pb-2"><span>Gold Glow Facial</span> <span>₹1200+</span></li>
+                        <li class="flex justify-between border-b border-gray-50 pb-2"><span>O3+ Brightening</span> <span>₹2500+</span></li>
+                    </ul>
+                </div>
+                <div class="p-8 border border-rose-100 rounded-2xl hover:shadow-xl transition group text-left">
+                    <h3 class="text-xl font-bold mb-4 text-rose-600">Hair Styling</h3>
+                    <ul class="text-gray-600 space-y-2 text-sm">
+                        <li class="flex justify-between border-b border-gray-50 pb-2"><span>Hair Cut</span> <span>₹300+</span></li>
+                        <li class="flex justify-between border-b border-gray-50 pb-2"><span>Conditioning Spa</span> <span>₹800+</span></li>
+                        <li class="flex justify-between border-b border-gray-50 pb-2"><span>Root Touch-up</span> <span>₹600+</span></li>
+                    </ul>
+                </div>
+                <div class="p-8 border border-rose-100 rounded-2xl hover:shadow-xl transition group text-left">
+                    <h3 class="text-xl font-bold mb-4 text-rose-600">Bridal & Party</h3>
+                    <ul class="text-gray-600 space-y-2 text-sm">
+                        <li class="flex justify-between border-b border-gray-50 pb-2"><span>Party Makeup</span> <span>₹2500+</span></li>
+                        <li class="flex justify-between border-b border-gray-50 pb-2"><span>Saree Draping</span> <span>₹300+</span></li>
+                        <li class="flex justify-between border-b border-gray-50 pb-2"><span>Full Bridal Package</span> <span>Quote</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-rose-50">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-serif text-gray-800 mb-4">See the Transformation</h2>
+            <p class="text-gray-600 mb-12">Real results from our happy clients at the parlour.</p>
+            <div class="max-w-4xl mx-auto relative group">
+                <div id="comparison-slider" class="relative w-full h-[500px] overflow-hidden rounded-3xl border-8 border-white shadow-2xl cursor-ew-resize">
+                    <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=1200&q=80" class="absolute inset-0 w-full h-full object-cover" alt="After">
+                    <div id="before-image" class="absolute inset-0 w-full h-full overflow-hidden" style="width: 50%;">
+                        <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=1200&q=80" class="absolute inset-0 w-[100vw] md:w-[896px] h-full object-cover filter grayscale sepia(20%)" alt="Before">
+                        <span class="absolute top-4 left-4 bg-black/50 text-white px-3 py-1 rounded-full text-xs uppercase tracking-widest">Before</span>
+                    </div>
+                    <span class="absolute top-4 right-4 bg-rose-500 text-white px-3 py-1 rounded-full text-xs uppercase tracking-widest">After</span>
+                    <div id="handle" class="absolute inset-y-0 left-1/2 w-1 bg-white shadow-lg pointer-events-none">
+                        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 bg-white rounded-full shadow-xl flex items-center justify-center">
+                            <svg class="w-6 h-6 text-rose-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18m-4 4l4-4m0 0l-4-4"></path></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="premium-services" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-rose-500 font-bold uppercase text-xs tracking-[0.2em]">Our Menu</span>
+                <h2 class="text-4xl md:text-5xl font-serif text-gray-900 mt-2">Premium Beauty Services</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="group relative bg-gray-50 rounded-3xl overflow-hidden hover:-translate-y-2 hover:shadow-2xl transition-all duration-500">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                        <div class="absolute top-4 right-4 bg-white/90 px-4 py-1 rounded-full shadow-md"><span class="text-rose-600 font-bold text-sm">₹800+</span></div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-serif text-gray-800 mb-2">Hydra-Glow Facial</h3>
+                        <p class="text-gray-600 text-sm mb-6">A deep-cleansing treatment using premium serums to restore radiance.</p>
+                        <button onclick="quickChat()" class="text-rose-500 font-bold text-sm flex items-center group-hover:underline">Book Now</button>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </section>
+
+    <section id="waxing-category" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row gap-16">
+                <div class="lg:w-1/2">
+                    <h3 class="text-3xl font-serif text-gray-800 mb-10">Waxing Essentials</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-end group"><span class="text-gray-800 font-medium">Full Arms</span><div class="flex-grow border-b border-dotted border-gray-300 mx-4 mb-1"></div><span class="font-bold">₹350</span></div>
+                        <div class="flex items-end group"><span class="text-gray-800 font-medium">Full Legs</span><div class="flex-grow border-b border-dotted border-gray-300 mx-4 mb-1"></div><span class="font-bold">₹450</span></div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 bg-rose-50/50 p-8 md:p-12 rounded-3xl">
+                    <h3 class="text-3xl font-serif text-gray-800 mb-10">Threading & More</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-end group"><span class="text-gray-800 font-medium">Eyebrows</span><div class="flex-grow border-b border-dotted border-gray-400 mx-4 mb-1"></div><span class="font-bold">₹50</span></div>
+                        <div class="flex items-end group"><span class="text-gray-800 font-medium">Upper Lip</span><div class="flex-grow border-b border-dotted border-gray-400 mx-4 mb-1"></div><span class="font-bold">₹30</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 hero-gradient">
+        <div class="container mx-auto px-10 flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/3">
+                <div class="rounded-3xl border-4 border-rose-300 p-2 rotate-3 shadow-2xl overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" class="rounded-2xl -rotate-3 hover:rotate-0 transition duration-500" alt="Owner">
+                </div>
+            </div>
+            <div class="md:w-2/3 space-y-6">
+                <h2 class="text-4xl font-serif text-gray-800">Hi, I'm Mrs. Sharma <br><span class="text-rose-500 text-2xl font-sans uppercase tracking-tighter">(Aunty!)</span></h2>
+                <p class="text-gray-600 text-lg italic italic">"I make every woman in our neighborhood feel like the best version of herself."</p>
+                <div class="flex gap-10 pt-4">
+                    <div><p class="text-3xl font-bold text-rose-500">15+</p><p class="text-gray-500 text-sm">Experience</p></div>
+                    <div><p class="text-3xl font-bold text-rose-500">2000+</p><p class="text-gray-500 text-sm">Happy Clients</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="py-20 bg-gray-900 text-white">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <div class="bg-white p-8 rounded-2xl shadow-2xl text-gray-800">
+                    <h3 class="text-3xl font-serif mb-6">Book an Appointment</h3>
+                    <form class="space-y-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <input type="text" placeholder="Your Name" class="w-full p-4 bg-gray-50 border rounded-lg focus:outline-none focus:border-rose-500">
+                            <input type="tel" placeholder="Phone Number" class="w-full p-4 bg-gray-50 border rounded-lg focus:outline-none focus:border-rose-500">
+                        </div>
+                        <select class="w-full p-4 bg-gray-50 border rounded-lg text-gray-500 focus:outline-none focus:border-rose-500">
+                            <option value="">Select Service</option>
+                            <option value="facial">Facial</option>
+                            <option value="hair">Hair Styling</option>
+                        </select>
+                        <textarea placeholder="Message" rows="4" class="w-full p-4 bg-gray-50 border rounded-lg focus:outline-none focus:border-rose-500"></textarea>
+                        <button type="button" onclick="sendToWhatsApp()" class="w-full bg-rose-500 text-white font-bold py-4 rounded-lg flex justify-center items-center shadow-lg uppercase tracking-wider">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.588-5.946 0-6.556 5.332-11.888 11.888-11.888 3.176 0 6.161 1.237 8.404 3.48s3.48 5.228 3.48 8.404c0 6.557-5.331 11.888-11.887 11.888-2.01 0-3.988-.511-5.742-1.48L0 24zm6.733-4.148l.303.18c1.393.83 3.111 1.269 4.863 1.269 5.059 0 9.176-4.117 9.176-9.177 0-2.452-.955-4.756-2.69-6.49s-4.038-2.69-6.49-2.69c-5.06 0-9.177 4.117-9.177 9.177 0 1.916.593 3.788 1.714 5.356l.198.283-.993 3.627 3.706-.974z" /></svg>
+                            Send to WhatsApp
+                        </button>
+                    </form>
+                </div>
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-3xl font-serif mb-4 text-rose-400">Visit Our Salon</h3>
+                        <p class="text-gray-400 mb-6">Raniganj, Purnia, Bihar – 854301</p>
+                    </div>
+                    <div class="w-full h-64 rounded-2xl overflow-hidden border-4 border-gray-800 shadow-xl">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115000!2d87.47!3d25.78!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eff9659021a8d1%3A0x6b49e19e075c345b!2sPurnia%2C%20Bihar!5e0!3m2!1sen!2sin!4v1700000000000" class="w-full h-full border-0 grayscale invert opacity-80" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" onclick="scrollToTop()" class="fixed bottom-6 right-6 bg-white text-rose-500 border-2 border-rose-500 w-12 h-12 rounded-full shadow-2xl flex items-center justify-center z-50 transition-all duration-300 opacity-0 pointer-events-none hover:scale-110">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </button>
+
+    <script>
+        // WhatsApp Functions
+        function sendToWhatsApp() {
+            const name = document.querySelector('input[placeholder="Your Name"]').value;
+            const phone = document.querySelector('input[placeholder="Phone Number"]').value;
+            const service = document.querySelector('select').value;
+            const message = document.querySelector('textarea').value;
+            if (!name || !phone || !service) { alert("Please fill details."); return; }
+            const phoneNumber = "917061230928";
+            const text = `Hi *Fair %26 Glow*, Appointment!%0a*Name:* ${name}%0a*Phone:* ${phone}%0a*Service:* ${service}%0a*Note:* ${message}`;
+            window.open("https://wa.me/" + phoneNumber + "?text=" + text, '_blank').focus();
+        }
+
+        function quickChat() {
+            const phoneNumber = "917061230928";
+            window.open("https://wa.me/" + phoneNumber + "?text=Hi!", '_blank').focus();
+        }
+
+        // Swiper Init
+        const swiper = new Swiper('.myHeroSwiper', {
+            loop: true, autoplay: { delay: 3500 }, pagination: { el: '.swiper-pagination', clickable: true }, effect: 'fade'
+        });
+
+        // Comparison Slider
+        const slider = document.getElementById('comparison-slider');
+        const beforeImg = document.getElementById('before-image');
+        const handle = document.getElementById('handle');
+        const moveSlider = (e) => {
+            let x = (e.type.includes('touch')) ? e.touches[0].clientX - slider.getBoundingClientRect().left : e.clientX - slider.getBoundingClientRect().left;
+            let width = slider.offsetWidth;
+            if (x < 0) x = 0; if (x > width) x = width;
+            let p = (x / width) * 100;
+            beforeImg.style.width = p + '%'; handle.style.left = p + '%';
+        };
+        slider.addEventListener('mousemove', moveSlider);
+        slider.addEventListener('touchmove', moveSlider);
+
+        // Back to Top Logic
+        const backBtn = document.getElementById('backToTop');
+        window.onscroll = () => {
+            if (window.scrollY > 300) backBtn.classList.remove('opacity-0', 'pointer-events-none');
+            else backBtn.classList.add('opacity-0', 'pointer-events-none');
+        };
+        function scrollToTop() { window.scrollTo({ top: 0, behavior: 'smooth' }); }
+    </script>
+</body>
+</html>

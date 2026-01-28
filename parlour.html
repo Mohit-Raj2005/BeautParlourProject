@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fair & Glow | Premium Beauty Parlour</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Poppins', sans-serif; }
+        h1, h2, h3, .font-serif { font-family: 'Playfair Display', serif; }
+        
+        /* Custom Swiper Dots */
+        .swiper-pagination-bullet-active { background: #f43f5e !important; }
+        
+        /* Sticky Offset */
+        #premium-services, #contact { scroll-margin-top: 80px; }
+
+        /* Animation for decorative blobs */
+        @keyframes blob {
+            0% { transform: translate(0px, 0px) scale(1); }
+            33% { transform: translate(30px, -50px) scale(1.1); }
+            66% { transform: translate(-20px, 20px) scale(0.9); }
+            100% { transform: translate(0px, 0px) scale(1); }
+        }
+        .animate-blob { animation: blob 7s infinite; }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <nav class="bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b border-rose-100">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold tracking-tighter text-gray-900">FAIR & <span class="text-rose-500">GLOW</span></div>
+            <ul class="hidden md:flex space-x-8 font-medium text-sm uppercase tracking-widest">
+                <li><a href="#" class="hover:text-rose-500 transition">Home</a></li>
+                <li><a href="#premium-services" class="hover:text-rose-500 transition">Services</a></li>
+                <li><a href="#transformation" class="hover:text-rose-500 transition">Transformations</a></li>
+                <li><a href="#contact" class="hover:text-rose-500 transition">Bookings</a></li>
+            </ul>
+            <button onclick="quickChat()" class="bg-rose-500 text-white px-6 py-2 rounded-full text-sm font-semibold hover:bg-rose-600 transition shadow-lg">Chat Now</button>
+        </div>
+    </nav>
+
+    <section class="relative bg-rose-50/50 py-16 overflow-hidden">
+        <div class="container mx-auto px-6 flex flex-col lg:flex-row items-center">
+            <div class="lg:w-1/2 space-y-8 z-10 text-center lg:text-left">
+                <h1 class="text-6xl lg:text-8xl leading-tight">Glow that <br><span class="text-rose-500 italic">Defines You.</span></h1>
+                <p class="text-gray-600 text-lg max-w-lg">Expert beauty care tailored for the modern woman by Purnia’s most trusted hands.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                    <a href="#premium-services" class="bg-gray-900 text-white px-10 py-4 rounded-xl font-bold hover:bg-black transition text-center">Explore Services</a>
+                    <button onclick="quickChat()" class="border-2 border-rose-200 text-rose-600 px-10 py-4 rounded-xl font-bold hover:bg-rose-100 transition">Call Aunty</button>
+                </div>
+            </div>
+            
+            <div class="lg:w-1/2 mt-12 lg:mt-0 relative w-full">
+                <div class="absolute -top-20 -right-20 w-72 h-72 bg-rose-200 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-blob"></div>
+                <div class="swiper myHeroSwiper rounded-3xl shadow-2xl border-8 border-white overflow-hidden">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=800" class="w-full h-[550px] object-cover"></div>
+                        <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=800" class="w-full h-[550px] object-cover"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="premium-services" class="py-24">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl mb-4">Our Premium Services</h2>
+                <div class="h-1 w-20 bg-rose-500 mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white border border-rose-50 p-6 rounded-3xl hover:shadow-2xl transition duration-500 group">
+                    <div class="h-64 rounded-2xl overflow-hidden mb-6">
+                        <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=600" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    </div>
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="text-2xl">Hydra-Glow Facial</h3>
+                        <span class="text-rose-500 font-bold">₹800+</span>
+                    </div>
+                    <p class="text-gray-500 text-sm mb-6">Deep cleansing treatment using premium serums.</p>
+                    <button onclick="sendToWhatsApp('Hydra-Glow Facial')" class="w-full py-3 rounded-xl bg-gray-50 font-semibold hover:bg-rose-500 hover:text-white transition">Book via WhatsApp</button>
+                </div>
+                </div>
+        </div>
+    </section>
+
+    <section id="transformation" class="py-24 bg-rose-50">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl mb-12">The Magic Touch</h2>
+            <div id="comparison-slider" class="max-w-3xl mx-auto h-[450px] relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white cursor-ew-resize">
+                <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=1200" class="absolute inset-0 w-full h-full object-cover">
+                <div id="before-image" class="absolute inset-0 w-1/2 overflow-hidden border-r-2 border-white shadow-xl">
+                    <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=1200" class="absolute inset-0 w-[800px] h-full object-cover grayscale">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-gray-900 text-white py-20">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-20">
+            <div>
+                <h2 class="text-4xl mb-6">Visit Us</h2>
+                <p class="text-gray-400 mb-8">Purnia’s destination for elegance. Call us or drop by for a consultation.</p>
+                <div class="space-y-4">
+                    <p>📍 Chirtwani Road, Purnia, Bihar</p>
+                    <p>📞 +91 95708 84281</p>
+                    <p>⏰ 9:00 AM - 8:00 PM</p>
+                </div>
+            </div>
+            <div class="bg-white/5 p-8 rounded-3xl backdrop-blur-md border border-white/10">
+                <h3 class="text-2xl mb-6">Quick Booking</h3>
+                <input type="text" id="custName" placeholder="Your Name" class="w-full p-4 bg-white/10 rounded-xl mb-4 focus:outline-none border border-white/10">
+                <select id="custService" class="w-full p-4 bg-white/10 rounded-xl mb-4 focus:outline-none border border-white/10 text-gray-400">
+                    <option value="Facial">Facial</option>
+                    <option value="Hair">Hair Styling</option>
+                    <option value="Bridal">Bridal Makeup</option>
+                </select>
+                <button onclick="sendToWhatsApp()" class="w-full py-4 bg-rose-500 rounded-xl font-bold hover:bg-rose-600 transition">Send WhatsApp Request</button>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" onclick="window.scrollTo({top:0, behavior:'smooth'})" class="fixed bottom-6 right-6 w-12 h-12 bg-white text-rose-500 rounded-full shadow-2xl hidden items-center justify-center z-50 transition border border-rose-100">↑</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        // 1. Swiper Init
+        new Swiper('.myHeroSwiper', { loop: true, autoplay: { delay: 3000 }, pagination: { el: '.swiper-pagination', clickable: true }, effect: 'fade' });
+
+        // 2. WhatsApp Logic
+        function sendToWhatsApp(specificService = null) {
+            const name = document.getElementById('custName')?.value || "Client";
+            const service = specificService || document.getElementById('custService')?.value || "General Inquiry";
+            const msg = `Hi Fair %26 Glow! I am ${name}. I'd like to book a ${service}.`;
+            window.open(`https://wa.me/919570884281?text=${msg}`, '_blank');
+        }
+
+        function quickChat() {
+            window.open(`https://wa.me/919570884281?text=Hi! I have a question about your services.`, '_blank');
+        }
+
+        // 3. Before/After Slider Logic
+        const slider = document.getElementById('comparison-slider');
+        const before = document.getElementById('before-image');
+        slider.addEventListener('mousemove', (e) => {
+            let x = e.clientX - slider.getBoundingClientRect().left;
+            before.style.width = (x / slider.offsetWidth * 100) + '%';
+        });
+
+        // 4. Back to Top Logic
+        window.onscroll = () => {
+            const btn = document.getElementById('backToTop');
+            btn.style.display = (window.scrollY > 500) ? 'flex' : 'none';
+        };
+    </script>
+</body>
+</html>
