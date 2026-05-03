@@ -7,9 +7,16 @@ A web-based application designed to streamline beauty parlour management — fro
 ## 🚀 Features
 - **Service Management**: Add, update, and categorize beauty services.
 - **Appointment Booking**: Easy scheduling with time-slot management.
+-  -📞 **Call Support** – Direct phone support for booking appointments.
+-  -💬 **WhatsApp Booking** – Integrated WhatsApp link for quick appointment scheduling.  
 - **Customer Records**: Maintain client profiles and history.
 - **Dashboard**: Overview of bookings, revenue, and service trends.
 - **Responsive UI**: Optimized for desktop and mobile users.
+- **Location Integration**: Google Maps embedded to help customers find the salon easily.  
+- **Offers & Discounts**: Customers can check the latest deals and promotions on services.
+-  **Customer Engagement**: Provides updates on services, seasonal offers, and special packages.  
+
+
 
 ---
 
