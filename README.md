@@ -19,5 +19,17 @@ A web-based application designed to streamline beauty parlour management — fro
 
 
 ---
+## 📌 Roadmap  
+
+- ✅ Basic UI setup  
+- ✅ Service listing module  
+- ✅ Appointment booking system (with call & WhatsApp support)  
+- ✅ Offers and promotions section  
+- ✅ Location maps integration  
+- ⏳ Customer record management  
+- ⏳ Dashboard analytics  
+- ⏳ Payment gateway integration  
+
+---
 
 
