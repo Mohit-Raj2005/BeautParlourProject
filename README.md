@@ -31,5 +31,11 @@ A web-based application designed to streamline beauty parlour management — fro
 - ⏳ Payment gateway integration  
 
 ---
+## 📂 Tech Stack  
+- **Frontend**: HTML, CSS, JavaScript
+- **API**:Whatsapp(for simple booking form)
+- **Hosting**: Vercel (beaut-parlour-project.vercel.app)  
+- **Future Enhancements**: Backend integration for customer records, analytics, and payments  
 
+---
 
