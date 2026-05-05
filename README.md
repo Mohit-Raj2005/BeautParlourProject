@@ -52,3 +52,4 @@ The long-term vision is to:
 Ultimately, this project demonstrates how technology can bridge the gap between traditional small businesses and modern digital solutions.
 
 
+---
